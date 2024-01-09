@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="global">
+    <div class="title">
+      <h1 id="title">Survey</h1>
+      <p id="description">This is a survey for newcommers in the programming world!</p >
+    </div>
+    <form id="survey-form" class="wrapper">
+      <div class="row">
+        <div class="cell">
+          <div class="label">
+            <label id="name-label" for="name">Enter your name:</label>
+          </div>
+          <div class="text-field">
+            <input id="name" class="default-input" type="text" placeholder="Type your name here" required/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          <div class="label">
+            <label id="email-label" for="email">Enter your e-mail:</label>
+          </div>
+          <div class="text-field">
+            <input id="email" class="default-input" type="email" placeholder="Type your e-mail here" required/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          <div class="label">
+            <label id="number-label" for="number">Enter your age:</label>
+          </div>
+          <div class="text-field">
+            <input id="number" class="default-input" type="number" min="10" max="100" placeholder="Type your age here" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          <div class="label">
+            <label>Select your nationality:</label>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="text-field">
+            <select class="default-input" name="nacionality" id="dropdown">
+              <option value="" selected hidden disabled>Nacionality</option>
+              <option value="BR">Brazil</option>
+              <option value="CO">Colombia</option>
+              <option value="PE">Peru</option>
+              <option value="EC">Ecuador</option>
+              <option value="CL">Chile</option>
+              <option value="UY">Uruguay</option>
+              <option value="VE">Venezuela</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          <div class="label">
+            <label>Are you a: (Required)</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          <div class="default-radio">
+            <input id="male" name="sex" type="radio" checked value="male"/>Male
+          </div>
+          <div class="default-radio">
+            <input id="female" name="sex" type="radio" value="female" />Female
+          </div>
+          <div class="default-radio">
+            <input id="other" name="sex" type="radio" value="other" />Other
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          <div>
+            <div class="label">
+              <label>Languages you want to learn about?</label>
+            </div>
+            <div class="default-checkbox">
+              <input type="checkbox" name="language" value="Java"/>Java
+            </div>
+            <div class="default-checkbox">
+              <input type="checkbox" name="language" value="Python"/>Python
+            </div>
+            <div class="default-checkbox">
+              <input type="checkbox" name="language" value="Go"/>Go
+            </div>
+            <div class="default-checkbox">
+              <input type="checkbox" name="language" value="Rust"/>Rust
+            </div>
+            <div class="default-checkbox">
+              <input type="checkbox" name="language" value="JavaScript"/>JavaScript
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          <div class="label">
+            Do you have any comments or sugestions?
+          </div>
+          <div class="text-field">
+            <textarea class="default-textarea" placeholder="Type your comments here..."></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          <input id="submit" class="default-input" type="submit">
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
